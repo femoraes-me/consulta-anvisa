@@ -14,6 +14,9 @@ app.use(express.json());
 const healthRoutes = require('./routes/health.routes');
 app.use('/', healthRoutes);
 
+const expedientesRoutes = require('./routes/expedientes.routes');
+app.use('/', expedientesRoutes);
+
 /**
  * Arquivos estáticos (frontend)
  */
